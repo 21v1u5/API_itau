@@ -31,3 +31,11 @@ API foi desenvolvida em Java e Spring boot.
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `intervaloSegundos` | `integer` | **Não Obrigatório** O padrão default é 60s  |
+
+# Diferenciais
+
+### Logs
+### Tratamento de erros
+### Documentação da API (swagger)
+### Documentação do Sistema
+### Configuração > Você consegue alterar os segundos da relação dos dados estatísticos (padrão 60s)
