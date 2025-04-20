@@ -1,4 +1,4 @@
-#  API transacao
+#  API Transação
 
 Este projeto é uma API rest para gerencimanto de transações e calcular estatísticas das transações realizadas.
 API foi desenvolvida em Java e Spring boot.
