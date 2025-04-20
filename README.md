@@ -1,3 +1,33 @@
-#  API REST que recebe Transações e retorna Estatísticas sob essas transações
+#  API transacao
 
-usando sprung boot java
+Este projeto é uma API rest para gerencimanto de transações e calcular estatísticas das transações realizadas.
+API foi desenvolvida em Java e Spring boot.
+
+## Documentação da API
+
+#### Receber Transações
+
+```http
+  POST /transacao
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `valor` | `BigDecimal` | **Obrigatório**. O valor da transação 
+| `dataHora` | `OffsetDateTime` | **Obrigatório**. O horário que a transação ocorreu
+
+#### Limpar Transações
+
+```http
+  DELETE /transacao
+```
+
+#### Calcular Estatísticas
+
+```http
+  GET /estatistica
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `intervaloSegundos` | `integer` | **Não Obrigatório** O padrão default é 60s  |
